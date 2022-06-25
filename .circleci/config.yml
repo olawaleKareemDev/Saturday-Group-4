@@ -19,7 +19,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - attach_workspace:
-          at: ./echo-output.txt
+          at: .
       - run: cat echo-output.txt
       
 
