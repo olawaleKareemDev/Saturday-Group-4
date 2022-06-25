@@ -7,7 +7,7 @@ jobs:
   say-hello:
     docker:
       - image: cimg/base:stable
-      steps:
+    steps:
       - run: echo "Hello, world! from group 4" > echo-output.txt
       - persist_to_workspace:
           root: .
@@ -15,7 +15,6 @@ jobs:
             - echo-output.txt
 
   print-hello:
-
     docker:
       - image: cimg/base:stable
     steps:
